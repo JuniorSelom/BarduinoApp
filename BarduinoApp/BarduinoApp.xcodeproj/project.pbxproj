@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79ACEB841F0D9BF400AAB51A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */; };
+		79ACEB861F0D9BF400AAB51A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB851F0D9BF400AAB51A /* ViewController.swift */; };
+		79ACEB891F0D9BF400AAB51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB871F0D9BF400AAB51A /* Main.storyboard */; };
+		79ACEB8C1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */; };
+		79ACEB8E1F0D9BF400AAB51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */; };
+		79ACEB911F0D9BF400AAB51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */; };
+		79ACEB9C1F0D9BF500AAB51A /* BarduinoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB9B1F0D9BF500AAB51A /* BarduinoAppTests.swift */; };
+		79ACEBA71F0D9BF500AAB51A /* BarduinoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEBA61F0D9BF500AAB51A /* BarduinoAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79ACEB981F0D9BF500AAB51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79ACEB781F0D9BF400AAB51A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79ACEB7F1F0D9BF400AAB51A;
+			remoteInfo = BarduinoApp;
+		};
+		79ACEBA31F0D9BF500AAB51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79ACEB781F0D9BF400AAB51A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79ACEB7F1F0D9BF400AAB51A;
+			remoteInfo = BarduinoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79ACEB801F0D9BF400AAB51A /* BarduinoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarduinoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79ACEB851F0D9BF400AAB51A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79ACEB881F0D9BF400AAB51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79ACEB8B1F0D9BF400AAB51A /* BarduinoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BarduinoApp.xcdatamodel; sourceTree = "<group>"; };
+		79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79ACEB901F0D9BF400AAB51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79ACEB921F0D9BF400AAB51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79ACEB971F0D9BF500AAB51A /* BarduinoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarduinoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79ACEB9B1F0D9BF500AAB51A /* BarduinoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarduinoAppTests.swift; sourceTree = "<group>"; };
+		79ACEB9D1F0D9BF500AAB51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79ACEBA21F0D9BF500AAB51A /* BarduinoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarduinoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79ACEBA61F0D9BF500AAB51A /* BarduinoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarduinoAppUITests.swift; sourceTree = "<group>"; };
+		79ACEBA81F0D9BF500AAB51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79ACEB7D1F0D9BF400AAB51A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEB941F0D9BF500AAB51A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEB9F1F0D9BF500AAB51A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79ACEB771F0D9BF400AAB51A = {
+			isa = PBXGroup;
+			children = (
+				79ACEB821F0D9BF400AAB51A /* BarduinoApp */,
+				79ACEB9A1F0D9BF500AAB51A /* BarduinoAppTests */,
+				79ACEBA51F0D9BF500AAB51A /* BarduinoAppUITests */,
+				79ACEB811F0D9BF400AAB51A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79ACEB811F0D9BF400AAB51A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79ACEB801F0D9BF400AAB51A /* BarduinoApp.app */,
+				79ACEB971F0D9BF500AAB51A /* BarduinoAppTests.xctest */,
+				79ACEBA21F0D9BF500AAB51A /* BarduinoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79ACEB821F0D9BF400AAB51A /* BarduinoApp */ = {
+			isa = PBXGroup;
+			children = (
+				79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */,
+				79ACEB851F0D9BF400AAB51A /* ViewController.swift */,
+				79ACEB871F0D9BF400AAB51A /* Main.storyboard */,
+				79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */,
+				79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */,
+				79ACEB921F0D9BF400AAB51A /* Info.plist */,
+				79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */,
+			);
+			path = BarduinoApp;
+			sourceTree = "<group>";
+		};
+		79ACEB9A1F0D9BF500AAB51A /* BarduinoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				79ACEB9B1F0D9BF500AAB51A /* BarduinoAppTests.swift */,
+				79ACEB9D1F0D9BF500AAB51A /* Info.plist */,
+			);
+			path = BarduinoAppTests;
+			sourceTree = "<group>";
+		};
+		79ACEBA51F0D9BF500AAB51A /* BarduinoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79ACEBA61F0D9BF500AAB51A /* BarduinoAppUITests.swift */,
+				79ACEBA81F0D9BF500AAB51A /* Info.plist */,
+			);
+			path = BarduinoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79ACEB7F1F0D9BF400AAB51A /* BarduinoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79ACEBAB1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoApp" */;
+			buildPhases = (
+				79ACEB7C1F0D9BF400AAB51A /* Sources */,
+				79ACEB7D1F0D9BF400AAB51A /* Frameworks */,
+				79ACEB7E1F0D9BF400AAB51A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarduinoApp;
+			productName = BarduinoApp;
+			productReference = 79ACEB801F0D9BF400AAB51A /* BarduinoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79ACEB961F0D9BF500AAB51A /* BarduinoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79ACEBAE1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppTests" */;
+			buildPhases = (
+				79ACEB931F0D9BF500AAB51A /* Sources */,
+				79ACEB941F0D9BF500AAB51A /* Frameworks */,
+				79ACEB951F0D9BF500AAB51A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79ACEB991F0D9BF500AAB51A /* PBXTargetDependency */,
+			);
+			name = BarduinoAppTests;
+			productName = BarduinoAppTests;
+			productReference = 79ACEB971F0D9BF500AAB51A /* BarduinoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79ACEBA11F0D9BF500AAB51A /* BarduinoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79ACEBB11F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppUITests" */;
+			buildPhases = (
+				79ACEB9E1F0D9BF500AAB51A /* Sources */,
+				79ACEB9F1F0D9BF500AAB51A /* Frameworks */,
+				79ACEBA01F0D9BF500AAB51A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79ACEBA41F0D9BF500AAB51A /* PBXTargetDependency */,
+			);
+			name = BarduinoAppUITests;
+			productName = BarduinoAppUITests;
+			productReference = 79ACEBA21F0D9BF500AAB51A /* BarduinoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79ACEB781F0D9BF400AAB51A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Selom Viadenou";
+				TargetAttributes = {
+					79ACEB7F1F0D9BF400AAB51A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8P4FFBGM2L;
+						ProvisioningStyle = Automatic;
+					};
+					79ACEB961F0D9BF500AAB51A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8P4FFBGM2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79ACEB7F1F0D9BF400AAB51A;
+					};
+					79ACEBA11F0D9BF500AAB51A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8P4FFBGM2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79ACEB7F1F0D9BF400AAB51A;
+					};
+				};
+			};
+			buildConfigurationList = 79ACEB7B1F0D9BF400AAB51A /* Build configuration list for PBXProject "BarduinoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79ACEB771F0D9BF400AAB51A;
+			productRefGroup = 79ACEB811F0D9BF400AAB51A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79ACEB7F1F0D9BF400AAB51A /* BarduinoApp */,
+				79ACEB961F0D9BF500AAB51A /* BarduinoAppTests */,
+				79ACEBA11F0D9BF500AAB51A /* BarduinoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79ACEB7E1F0D9BF400AAB51A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ACEB911F0D9BF400AAB51A /* LaunchScreen.storyboard in Resources */,
+				79ACEB8E1F0D9BF400AAB51A /* Assets.xcassets in Resources */,
+				79ACEB891F0D9BF400AAB51A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEB951F0D9BF500AAB51A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEBA01F0D9BF500AAB51A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79ACEB7C1F0D9BF400AAB51A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ACEB8C1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld in Sources */,
+				79ACEB861F0D9BF400AAB51A /* ViewController.swift in Sources */,
+				79ACEB841F0D9BF400AAB51A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEB931F0D9BF500AAB51A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ACEB9C1F0D9BF500AAB51A /* BarduinoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79ACEB9E1F0D9BF500AAB51A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ACEBA71F0D9BF500AAB51A /* BarduinoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79ACEB991F0D9BF500AAB51A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79ACEB7F1F0D9BF400AAB51A /* BarduinoApp */;
+			targetProxy = 79ACEB981F0D9BF500AAB51A /* PBXContainerItemProxy */;
+		};
+		79ACEBA41F0D9BF500AAB51A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79ACEB7F1F0D9BF400AAB51A /* BarduinoApp */;
+			targetProxy = 79ACEBA31F0D9BF500AAB51A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79ACEB871F0D9BF400AAB51A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79ACEB881F0D9BF400AAB51A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79ACEB901F0D9BF400AAB51A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79ACEBA91F0D9BF500AAB51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79ACEBAA1F0D9BF500AAB51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79ACEBAC1F0D9BF500AAB51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79ACEBAD1F0D9BF500AAB51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79ACEBAF1F0D9BF500AAB51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarduinoApp.app/BarduinoApp";
+			};
+			name = Debug;
+		};
+		79ACEBB01F0D9BF500AAB51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarduinoApp.app/BarduinoApp";
+			};
+			name = Release;
+		};
+		79ACEBB21F0D9BF500AAB51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BarduinoApp;
+			};
+			name = Debug;
+		};
+		79ACEBB31F0D9BF500AAB51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				INFOPLIST_FILE = BarduinoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BarduinoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79ACEB7B1F0D9BF400AAB51A /* Build configuration list for PBXProject "BarduinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ACEBA91F0D9BF500AAB51A /* Debug */,
+				79ACEBAA1F0D9BF500AAB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79ACEBAB1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ACEBAC1F0D9BF500AAB51A /* Debug */,
+				79ACEBAD1F0D9BF500AAB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79ACEBAE1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ACEBAF1F0D9BF500AAB51A /* Debug */,
+				79ACEBB01F0D9BF500AAB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79ACEBB11F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79ACEBB21F0D9BF500AAB51A /* Debug */,
+				79ACEBB31F0D9BF500AAB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79ACEB8B1F0D9BF400AAB51A /* BarduinoApp.xcdatamodel */,
+			);
+			currentVersion = 79ACEB8B1F0D9BF400AAB51A /* BarduinoApp.xcdatamodel */;
+			path = BarduinoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79ACEB781F0D9BF400AAB51A /* Project object */;
+}
