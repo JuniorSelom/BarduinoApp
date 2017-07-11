@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5D537A2B334D26D0E6B15D /* Pods_BarduinoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BAF2834BF1181D54255CD0 /* Pods_BarduinoApp.framework */; };
 		79ACEB841F0D9BF400AAB51A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */; };
 		79ACEB861F0D9BF400AAB51A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB851F0D9BF400AAB51A /* ViewController.swift */; };
-		79ACEB891F0D9BF400AAB51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB871F0D9BF400AAB51A /* Main.storyboard */; };
 		79ACEB8C1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */; };
 		79ACEB8E1F0D9BF400AAB51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */; };
 		79ACEB911F0D9BF400AAB51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */; };
 		79ACEB9C1F0D9BF500AAB51A /* BarduinoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEB9B1F0D9BF500AAB51A /* BarduinoAppTests.swift */; };
 		79ACEBA71F0D9BF500AAB51A /* BarduinoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACEBA61F0D9BF500AAB51A /* BarduinoAppUITests.swift */; };
+		865E68BE1F138A86001A0BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865E68BD1F138A86001A0BDE /* Main.storyboard */; };
+		865E68C11F139262001A0BDE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68C01F139262001A0BDE /* HomeTableViewCell.swift */; };
+		865E68C61F13B16F001A0BDE /* fanta_coca.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E68C31F13B16F001A0BDE /* fanta_coca.png */; };
+		865E68C71F13B16F001A0BDE /* whisky_coca2.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E68C41F13B16F001A0BDE /* whisky_coca2.png */; };
+		865E68C81F13B16F001A0BDE /* whisky_coca.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E68C51F13B16F001A0BDE /* whisky_coca.png */; };
+		865E68CA1F13B37B001A0BDE /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68C91F13B37B001A0BDE /* OrderViewController.swift */; };
+		865E68CC1F13C2F6001A0BDE /* ProfilUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68CB1F13C2F6001A0BDE /* ProfilUserViewController.swift */; };
+		865E68CE1F13C8C3001A0BDE /* QueueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68CD1F13C8C3001A0BDE /* QueueTableViewCell.swift */; };
+		865E68D01F13C8E5001A0BDE /* QueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68CF1F13C8E5001A0BDE /* QueueTableViewController.swift */; };
+		865E68D21F13D3F8001A0BDE /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D11F13D3F8001A0BDE /* QrCodeViewController.swift */; };
+		865E68D41F14D62A001A0BDE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D31F14D62A001A0BDE /* Config.swift */; };
+		865E68D61F14E316001A0BDE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D51F14E316001A0BDE /* RegisterViewController.swift */; };
+		865E68D81F151F3C001A0BDE /* coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E68D71F151F3C001A0BDE /* coins.png */; };
+		865E68DA1F152028001A0BDE /* AddCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D91F152028001A0BDE /* AddCoinViewController.swift */; };
+		8679581F1F0FCAB000E0AD19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679581E1F0FCAB000E0AD19 /* HomeViewController.swift */; };
+		8679582B1F13767300E0AD19 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679582A1F13767300E0AD19 /* Alamofire.framework */; };
+		8679582D1F137BAC00E0AD19 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679582C1F137BAC00E0AD19 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +51,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		867958231F136E2700E0AD19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		37EA5B6AD2686F3F57103930 /* Pods-BarduinoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarduinoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarduinoApp/Pods-BarduinoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3BD9EFA2456502BC2DEB1802 /* Pods-BarduinoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarduinoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarduinoApp/Pods-BarduinoApp.release.xcconfig"; sourceTree = "<group>"; };
 		79ACEB801F0D9BF400AAB51A /* BarduinoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarduinoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79ACEB851F0D9BF400AAB51A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79ACEB881F0D9BF400AAB51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79ACEB8B1F0D9BF400AAB51A /* BarduinoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BarduinoApp.xcdatamodel; sourceTree = "<group>"; };
 		79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79ACEB901F0D9BF400AAB51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +80,24 @@
 		79ACEBA21F0D9BF500AAB51A /* BarduinoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarduinoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ACEBA61F0D9BF500AAB51A /* BarduinoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarduinoAppUITests.swift; sourceTree = "<group>"; };
 		79ACEBA81F0D9BF500AAB51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865E68BD1F138A86001A0BDE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		865E68C01F139262001A0BDE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		865E68C31F13B16F001A0BDE /* fanta_coca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanta_coca.png; sourceTree = "<group>"; };
+		865E68C41F13B16F001A0BDE /* whisky_coca2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whisky_coca2.png; sourceTree = "<group>"; };
+		865E68C51F13B16F001A0BDE /* whisky_coca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whisky_coca.png; sourceTree = "<group>"; };
+		865E68C91F13B37B001A0BDE /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		865E68CB1F13C2F6001A0BDE /* ProfilUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilUserViewController.swift; sourceTree = "<group>"; };
+		865E68CD1F13C8C3001A0BDE /* QueueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTableViewCell.swift; sourceTree = "<group>"; };
+		865E68CF1F13C8E5001A0BDE /* QueueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTableViewController.swift; sourceTree = "<group>"; };
+		865E68D11F13D3F8001A0BDE /* QrCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrCodeViewController.swift; sourceTree = "<group>"; };
+		865E68D31F14D62A001A0BDE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		865E68D51F14E316001A0BDE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		865E68D71F151F3C001A0BDE /* coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins.png; sourceTree = "<group>"; };
+		865E68D91F152028001A0BDE /* AddCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoinViewController.swift; sourceTree = "<group>"; };
+		8679581E1F0FCAB000E0AD19 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8679582A1F13767300E0AD19 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/BarduinoApp-elpzybatjomalrbrefadgjsqedys/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		8679582C1F137BAC00E0AD19 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/BarduinoApp-elpzybatjomalrbrefadgjsqedys/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		B5BAF2834BF1181D54255CD0 /* Pods_BarduinoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarduinoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8679582D1F137BAC00E0AD19 /* SwiftyJSON.framework in Frameworks */,
+				8679582B1F13767300E0AD19 /* Alamofire.framework in Frameworks */,
+				2F5D537A2B334D26D0E6B15D /* Pods_BarduinoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161E3F13A89712A76096674C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8679582C1F137BAC00E0AD19 /* SwiftyJSON.framework */,
+				8679582A1F13767300E0AD19 /* Alamofire.framework */,
+				B5BAF2834BF1181D54255CD0 /* Pods_BarduinoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79ACEB771F0D9BF400AAB51A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +145,8 @@
 				79ACEB9A1F0D9BF500AAB51A /* BarduinoAppTests */,
 				79ACEBA51F0D9BF500AAB51A /* BarduinoAppUITests */,
 				79ACEB811F0D9BF400AAB51A /* Products */,
+				F43A631245075FDC205300EF /* Pods */,
+				161E3F13A89712A76096674C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +163,16 @@
 		79ACEB821F0D9BF400AAB51A /* BarduinoApp */ = {
 			isa = PBXGroup;
 			children = (
+				865E68C21F13B161001A0BDE /* Res */,
+				861DE56D1F0F995900654D64 /* Controller */,
 				79ACEB831F0D9BF400AAB51A /* AppDelegate.swift */,
 				79ACEB851F0D9BF400AAB51A /* ViewController.swift */,
-				79ACEB871F0D9BF400AAB51A /* Main.storyboard */,
+				865E68BD1F138A86001A0BDE /* Main.storyboard */,
 				79ACEB8D1F0D9BF400AAB51A /* Assets.xcassets */,
 				79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */,
 				79ACEB921F0D9BF400AAB51A /* Info.plist */,
 				79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */,
+				865E68D31F14D62A001A0BDE /* Config.swift */,
 			);
 			path = BarduinoApp;
 			sourceTree = "<group>";
@@ -128,6 +195,58 @@
 			path = BarduinoAppUITests;
 			sourceTree = "<group>";
 		};
+		861DE56D1F0F995900654D64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				865E68BF1F13923D001A0BDE /* Cells */,
+				861DE56E1F0F996A00654D64 /* Views */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		861DE56E1F0F996A00654D64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8679581E1F0FCAB000E0AD19 /* HomeViewController.swift */,
+				865E68C91F13B37B001A0BDE /* OrderViewController.swift */,
+				865E68CB1F13C2F6001A0BDE /* ProfilUserViewController.swift */,
+				865E68CF1F13C8E5001A0BDE /* QueueTableViewController.swift */,
+				865E68D11F13D3F8001A0BDE /* QrCodeViewController.swift */,
+				865E68D51F14E316001A0BDE /* RegisterViewController.swift */,
+				865E68D91F152028001A0BDE /* AddCoinViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		865E68BF1F13923D001A0BDE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				865E68C01F139262001A0BDE /* HomeTableViewCell.swift */,
+				865E68CD1F13C8C3001A0BDE /* QueueTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		865E68C21F13B161001A0BDE /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				865E68D71F151F3C001A0BDE /* coins.png */,
+				865E68C31F13B16F001A0BDE /* fanta_coca.png */,
+				865E68C41F13B16F001A0BDE /* whisky_coca2.png */,
+				865E68C51F13B16F001A0BDE /* whisky_coca.png */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
+		F43A631245075FDC205300EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37EA5B6AD2686F3F57103930 /* Pods-BarduinoApp.debug.xcconfig */,
+				3BD9EFA2456502BC2DEB1802 /* Pods-BarduinoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +254,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79ACEBAB1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoApp" */;
 			buildPhases = (
+				3C17DD3CE454BD883A5F46B7 /* [CP] Check Pods Manifest.lock */,
 				79ACEB7C1F0D9BF400AAB51A /* Sources */,
 				79ACEB7D1F0D9BF400AAB51A /* Frameworks */,
 				79ACEB7E1F0D9BF400AAB51A /* Resources */,
+				00207D7E21DE3AC32D6D4222 /* [CP] Embed Pods Frameworks */,
+				7DABA75F911A8A1F4FD88C95 /* [CP] Copy Pods Resources */,
+				867958231F136E2700E0AD19 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,9 +361,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865E68C61F13B16F001A0BDE /* fanta_coca.png in Resources */,
+				865E68BE1F138A86001A0BDE /* Main.storyboard in Resources */,
+				865E68D81F151F3C001A0BDE /* coins.png in Resources */,
+				865E68C81F13B16F001A0BDE /* whisky_coca.png in Resources */,
 				79ACEB911F0D9BF400AAB51A /* LaunchScreen.storyboard in Resources */,
 				79ACEB8E1F0D9BF400AAB51A /* Assets.xcassets in Resources */,
-				79ACEB891F0D9BF400AAB51A /* Main.storyboard in Resources */,
+				865E68C71F13B16F001A0BDE /* whisky_coca2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +387,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00207D7E21DE3AC32D6D4222 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarduinoApp/Pods-BarduinoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C17DD3CE454BD883A5F46B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DABA75F911A8A1F4FD88C95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarduinoApp/Pods-BarduinoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79ACEB7C1F0D9BF400AAB51A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				79ACEB8C1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld in Sources */,
+				865E68C11F139262001A0BDE /* HomeTableViewCell.swift in Sources */,
+				865E68D21F13D3F8001A0BDE /* QrCodeViewController.swift in Sources */,
+				865E68D61F14E316001A0BDE /* RegisterViewController.swift in Sources */,
 				79ACEB861F0D9BF400AAB51A /* ViewController.swift in Sources */,
+				865E68D41F14D62A001A0BDE /* Config.swift in Sources */,
+				865E68CE1F13C8C3001A0BDE /* QueueTableViewCell.swift in Sources */,
+				865E68D01F13C8E5001A0BDE /* QueueTableViewController.swift in Sources */,
+				865E68CC1F13C2F6001A0BDE /* ProfilUserViewController.swift in Sources */,
 				79ACEB841F0D9BF400AAB51A /* AppDelegate.swift in Sources */,
+				8679581F1F0FCAB000E0AD19 /* HomeViewController.swift in Sources */,
+				865E68CA1F13B37B001A0BDE /* OrderViewController.swift in Sources */,
+				865E68DA1F152028001A0BDE /* AddCoinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +488,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79ACEB871F0D9BF400AAB51A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79ACEB881F0D9BF400AAB51A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79ACEB8F1F0D9BF400AAB51A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +592,7 @@
 		};
 		79ACEBAC1F0D9BF500AAB51A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EA5B6AD2686F3F57103930 /* Pods-BarduinoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8P4FFBGM2L;
@@ -428,6 +606,7 @@
 		};
 		79ACEBAD1F0D9BF500AAB51A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD9EFA2456502BC2DEB1802 /* Pods-BarduinoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8P4FFBGM2L;
@@ -516,6 +695,7 @@
 				79ACEBAD1F0D9BF500AAB51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79ACEBAE1F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +704,7 @@
 				79ACEBB01F0D9BF500AAB51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79ACEBB11F0D9BF500AAB51A /* Build configuration list for PBXNativeTarget "BarduinoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +713,7 @@
 				79ACEBB31F0D9BF500AAB51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
