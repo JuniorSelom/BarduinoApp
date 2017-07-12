@@ -29,9 +29,30 @@
 		865E68D61F14E316001A0BDE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D51F14E316001A0BDE /* RegisterViewController.swift */; };
 		865E68D81F151F3C001A0BDE /* coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 865E68D71F151F3C001A0BDE /* coins.png */; };
 		865E68DA1F152028001A0BDE /* AddCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68D91F152028001A0BDE /* AddCoinViewController.swift */; };
+		865E68DC1F160F0B001A0BDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E68DB1F160F0A001A0BDE /* Utils.swift */; };
 		8679581F1F0FCAB000E0AD19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679581E1F0FCAB000E0AD19 /* HomeViewController.swift */; };
 		8679582B1F13767300E0AD19 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679582A1F13767300E0AD19 /* Alamofire.framework */; };
 		8679582D1F137BAC00E0AD19 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679582C1F137BAC00E0AD19 /* SwiftyJSON.framework */; };
+		86A9AAC61F163D1200683B88 /* coins_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAC21F163D1200683B88 /* coins_active.png */; };
+		86A9AAC71F163D1200683B88 /* coins_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAC31F163D1200683B88 /* coins_normal.png */; };
+		86A9AACB1F163E6200683B88 /* buy_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AACA1F163E6200683B88 /* buy_hover.png */; };
+		86A9AACD1F1652A400683B88 /* icons8-Cocktail-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AACC1F1652A400683B88 /* icons8-Cocktail-50.png */; };
+		86A9AACF1F1652F500683B88 /* icons8-Cocktail-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AACE1F1652F500683B88 /* icons8-Cocktail-40.png */; };
+		86A9AAD11F16532800683B88 /* icons8-Cocktail-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAD01F16532800683B88 /* icons8-Cocktail-30.png */; };
+		86A9AAD41F16545100683B88 /* cocktail_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAD21F16545100683B88 /* cocktail_filled.png */; };
+		86A9AAD51F16545100683B88 /* cocktail.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAD31F16545100683B88 /* cocktail.png */; };
+		86A9AAD81F16549E00683B88 /* shopping_cart_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAD61F16549E00683B88 /* shopping_cart_filled.png */; };
+		86A9AAD91F16549E00683B88 /* shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAD71F16549E00683B88 /* shopping_cart.png */; };
+		86A9AADC1F16550700683B88 /* QR_Code_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AADA1F16550700683B88 /* QR_Code_filled.png */; };
+		86A9AADD1F16550700683B88 /* QR_Code.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AADB1F16550700683B88 /* QR_Code.png */; };
+		86A9AADF1F16553600683B88 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AADE1F16553600683B88 /* user.png */; };
+		86A9AAE31F16576600683B88 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAE21F16576600683B88 /* user_icon.png */; };
+		86A9AAE51F1657F900683B88 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAE41F1657F900683B88 /* logout.png */; };
+		86A9AAE71F1658D300683B88 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAE61F1658D300683B88 /* logo.png */; };
+		86A9AAE91F1659A800683B88 /* add_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAE81F1659A800683B88 /* add_user.png */; };
+		86A9AAEB1F165A9300683B88 /* coins_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAEA1F165A9300683B88 /* coins_big.png */; };
+		86A9AAED1F16610E00683B88 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAEC1F16610E00683B88 /* order.png */; };
+		86A9AAEF1F1672EE00683B88 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9AAEE1F1672EE00683B88 /* arrow_right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,9 +115,30 @@
 		865E68D51F14E316001A0BDE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		865E68D71F151F3C001A0BDE /* coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins.png; sourceTree = "<group>"; };
 		865E68D91F152028001A0BDE /* AddCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoinViewController.swift; sourceTree = "<group>"; };
+		865E68DB1F160F0A001A0BDE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8679581E1F0FCAB000E0AD19 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8679582A1F13767300E0AD19 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/BarduinoApp-elpzybatjomalrbrefadgjsqedys/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		8679582C1F137BAC00E0AD19 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/BarduinoApp-elpzybatjomalrbrefadgjsqedys/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		86A9AAC21F163D1200683B88 /* coins_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins_active.png; sourceTree = "<group>"; };
+		86A9AAC31F163D1200683B88 /* coins_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins_normal.png; sourceTree = "<group>"; };
+		86A9AACA1F163E6200683B88 /* buy_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buy_hover.png; sourceTree = "<group>"; };
+		86A9AACC1F1652A400683B88 /* icons8-Cocktail-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Cocktail-50.png"; sourceTree = "<group>"; };
+		86A9AACE1F1652F500683B88 /* icons8-Cocktail-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Cocktail-40.png"; sourceTree = "<group>"; };
+		86A9AAD01F16532800683B88 /* icons8-Cocktail-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Cocktail-30.png"; sourceTree = "<group>"; };
+		86A9AAD21F16545100683B88 /* cocktail_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocktail_filled.png; sourceTree = "<group>"; };
+		86A9AAD31F16545100683B88 /* cocktail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocktail.png; sourceTree = "<group>"; };
+		86A9AAD61F16549E00683B88 /* shopping_cart_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping_cart_filled.png; sourceTree = "<group>"; };
+		86A9AAD71F16549E00683B88 /* shopping_cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping_cart.png; sourceTree = "<group>"; };
+		86A9AADA1F16550700683B88 /* QR_Code_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR_Code_filled.png; sourceTree = "<group>"; };
+		86A9AADB1F16550700683B88 /* QR_Code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR_Code.png; sourceTree = "<group>"; };
+		86A9AADE1F16553600683B88 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		86A9AAE21F16576600683B88 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		86A9AAE41F1657F900683B88 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		86A9AAE61F1658D300683B88 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		86A9AAE81F1659A800683B88 /* add_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_user.png; sourceTree = "<group>"; };
+		86A9AAEA1F165A9300683B88 /* coins_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins_big.png; sourceTree = "<group>"; };
+		86A9AAEC1F16610E00683B88 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
+		86A9AAEE1F1672EE00683B88 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
 		B5BAF2834BF1181D54255CD0 /* Pods_BarduinoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarduinoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +215,7 @@
 				79ACEB921F0D9BF400AAB51A /* Info.plist */,
 				79ACEB8A1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld */,
 				865E68D31F14D62A001A0BDE /* Config.swift */,
+				865E68DB1F160F0A001A0BDE /* Utils.swift */,
 			);
 			path = BarduinoApp;
 			sourceTree = "<group>";
@@ -230,6 +273,26 @@
 		865E68C21F13B161001A0BDE /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				86A9AAE61F1658D300683B88 /* logo.png */,
+				86A9AAE81F1659A800683B88 /* add_user.png */,
+				86A9AACE1F1652F500683B88 /* icons8-Cocktail-40.png */,
+				86A9AACC1F1652A400683B88 /* icons8-Cocktail-50.png */,
+				86A9AAD61F16549E00683B88 /* shopping_cart_filled.png */,
+				86A9AAD71F16549E00683B88 /* shopping_cart.png */,
+				86A9AAEC1F16610E00683B88 /* order.png */,
+				86A9AAEE1F1672EE00683B88 /* arrow_right.png */,
+				86A9AAD01F16532800683B88 /* icons8-Cocktail-30.png */,
+				86A9AAEA1F165A9300683B88 /* coins_big.png */,
+				86A9AADA1F16550700683B88 /* QR_Code_filled.png */,
+				86A9AADB1F16550700683B88 /* QR_Code.png */,
+				86A9AAE41F1657F900683B88 /* logout.png */,
+				86A9AAE21F16576600683B88 /* user_icon.png */,
+				86A9AADE1F16553600683B88 /* user.png */,
+				86A9AAD21F16545100683B88 /* cocktail_filled.png */,
+				86A9AAD31F16545100683B88 /* cocktail.png */,
+				86A9AACA1F163E6200683B88 /* buy_hover.png */,
+				86A9AAC21F163D1200683B88 /* coins_active.png */,
+				86A9AAC31F163D1200683B88 /* coins_normal.png */,
 				865E68D71F151F3C001A0BDE /* coins.png */,
 				865E68C31F13B16F001A0BDE /* fanta_coca.png */,
 				865E68C41F13B16F001A0BDE /* whisky_coca2.png */,
@@ -319,7 +382,7 @@
 				TargetAttributes = {
 					79ACEB7F1F0D9BF400AAB51A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8P4FFBGM2L;
+						DevelopmentTeam = 6SD7Y876X3;
 						ProvisioningStyle = Automatic;
 					};
 					79ACEB961F0D9BF500AAB51A = {
@@ -361,13 +424,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A9AAE31F16576600683B88 /* user_icon.png in Resources */,
+				86A9AAEB1F165A9300683B88 /* coins_big.png in Resources */,
+				86A9AAE71F1658D300683B88 /* logo.png in Resources */,
+				86A9AAC61F163D1200683B88 /* coins_active.png in Resources */,
+				86A9AACD1F1652A400683B88 /* icons8-Cocktail-50.png in Resources */,
+				86A9AAD91F16549E00683B88 /* shopping_cart.png in Resources */,
+				86A9AADC1F16550700683B88 /* QR_Code_filled.png in Resources */,
 				865E68C61F13B16F001A0BDE /* fanta_coca.png in Resources */,
+				86A9AADD1F16550700683B88 /* QR_Code.png in Resources */,
+				86A9AAE51F1657F900683B88 /* logout.png in Resources */,
+				86A9AADF1F16553600683B88 /* user.png in Resources */,
+				86A9AAD11F16532800683B88 /* icons8-Cocktail-30.png in Resources */,
 				865E68BE1F138A86001A0BDE /* Main.storyboard in Resources */,
 				865E68D81F151F3C001A0BDE /* coins.png in Resources */,
+				86A9AAEF1F1672EE00683B88 /* arrow_right.png in Resources */,
+				86A9AACF1F1652F500683B88 /* icons8-Cocktail-40.png in Resources */,
+				86A9AAE91F1659A800683B88 /* add_user.png in Resources */,
+				86A9AAD41F16545100683B88 /* cocktail_filled.png in Resources */,
 				865E68C81F13B16F001A0BDE /* whisky_coca.png in Resources */,
 				79ACEB911F0D9BF400AAB51A /* LaunchScreen.storyboard in Resources */,
+				86A9AAD51F16545100683B88 /* cocktail.png in Resources */,
+				86A9AAD81F16549E00683B88 /* shopping_cart_filled.png in Resources */,
 				79ACEB8E1F0D9BF400AAB51A /* Assets.xcassets in Resources */,
+				86A9AAED1F16610E00683B88 /* order.png in Resources */,
+				86A9AACB1F163E6200683B88 /* buy_hover.png in Resources */,
 				865E68C71F13B16F001A0BDE /* whisky_coca2.png in Resources */,
+				86A9AAC71F163D1200683B88 /* coins_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +526,7 @@
 				79ACEB8C1F0D9BF400AAB51A /* BarduinoApp.xcdatamodeld in Sources */,
 				865E68C11F139262001A0BDE /* HomeTableViewCell.swift in Sources */,
 				865E68D21F13D3F8001A0BDE /* QrCodeViewController.swift in Sources */,
+				865E68DC1F160F0B001A0BDE /* Utils.swift in Sources */,
 				865E68D61F14E316001A0BDE /* RegisterViewController.swift in Sources */,
 				79ACEB861F0D9BF400AAB51A /* ViewController.swift in Sources */,
 				865E68D41F14D62A001A0BDE /* Config.swift in Sources */,
@@ -595,11 +679,14 @@
 			baseConfigurationReference = 37EA5B6AD2686F3F57103930 /* Pods-BarduinoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				CODE_SIGN_IDENTITY = "iPhone Developer: mrfull31@gmail.com (U6983R6HK7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6SD7Y876X3;
 				INFOPLIST_FILE = BarduinoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Barduino;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -609,11 +696,14 @@
 			baseConfigurationReference = 3BD9EFA2456502BC2DEB1802 /* Pods-BarduinoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8P4FFBGM2L;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6SD7Y876X3;
 				INFOPLIST_FILE = BarduinoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Marabou.BarduinoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Barduino;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

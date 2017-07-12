@@ -14,10 +14,16 @@ class OrderViewController: UIViewController {
     var test = String()
     var item: JSON?
 
+    @IBOutlet weak var imageCocktail: UIImageView!
     @IBOutlet weak var nameCocktailLabel: UILabel!
     @IBOutlet weak var priceCocktailLabel: UILabel!
-    let defaults = UserDefaults.standard
     
+    @IBOutlet weak var firstIngredientCocktailLabel: UILabel!
+    @IBOutlet weak var secondIngredientCocktailLabel: UILabel!
+    
+    @IBOutlet weak var orderButton: UIButton!
+    
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var orderBtn: UIButton!
     
@@ -28,9 +34,20 @@ class OrderViewController: UIViewController {
         print(item!)
         let tt = config().apiUrl
         print(tt)
-        // Do any additional setup after loading the view.
+        
+        orderBtn.layer.cornerRadius = 10
+        orderBtn.layer.borderWidth = 1.0
+        
         self.nameCocktailLabel.text = self.item?["name"].stringValue
         self.priceCocktailLabel.text = self.item?["prix"].stringValue
+        
+        self.firstIngredientCocktailLabel.text = "- " + (self.item?["drinks"][0]["name"].stringValue)!
+        self.secondIngredientCocktailLabel.text = "- " + (self.item?["drinks"][1]["name"].stringValue)!
+        
+        var nameImage = (self.item?["name"].string)! + ".png"
+        nameImage = nameImage.replacingOccurrences(of: " ", with: "_")
+        imageCocktail.image = UIImage(named: nameImage)
+        
         orderBtn.isEnabled = false
     }
     
@@ -62,7 +79,7 @@ class OrderViewController: UIViewController {
     
     func orderDrink() {
         let headers: HTTPHeaders = [
-            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")))",
+            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")!))",
             "Accept": "application/json"
         ]
         

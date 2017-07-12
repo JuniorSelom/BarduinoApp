@@ -61,7 +61,7 @@ class HomeViewController: UITableViewController {
     
     func getCocktails() {
         let headers: HTTPHeaders = [
-            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")))",
+            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")!))",
             "Accept": "application/json"
         ]
         print(defaults.object(forKey: "token")!)

@@ -12,6 +12,7 @@ class QueueTableViewCell: UITableViewCell {
 
     @IBOutlet weak var drinkLabel: UILabel!
     @IBOutlet weak var uidLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

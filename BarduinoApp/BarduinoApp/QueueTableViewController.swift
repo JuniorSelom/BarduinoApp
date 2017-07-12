@@ -28,6 +28,35 @@ class QueueTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // let date = Date()
+        // let isoDate = "2017-07-04T09:09:17.891957Z"
+
+        // let string = "2017-07-04T09:09:17.891957Z"
+        /*
+        let dateFormatter = DateFormatter()
+        let tempLocale = dateFormatter.locale // save locale temporarily
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+        let date = dateFormatter.date(from: string)!
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
+        dateFormatter.locale = tempLocale // reset the locale
+        let dateString = dateFormatter.string(from: date)
+        */
+        /*
+        let str = string.ISO8601toString()
+        print("------")
+        print(str)
+        print("------")
+        */
+        /*
+        let tt = dateString.replacingOccurrences(of: " ", with: " à ")
+        let tt2 = "Le " + tt
+ 
+        print("____-____--_---_-")
+        print("EXACT_DATE : \(dateString)")
+        print(tt2)
+        print("____-____--_---_-")
+ */
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -90,6 +119,12 @@ class QueueTableViewController: UITableViewController {
         }
         cell.drinkLabel.text = element["cocktail"]["name"].stringValue
         cell.uidLabel.text = element["uuid"].stringValue
+        
+        let dateOrder = element["date"]
+            .stringValue
+            .ISO8601toString()
+            .replacingOccurrences(of: " ", with: " à ")
+        cell.dateLabel.text = "Le " + dateOrder
         
         return cell
     }

@@ -21,6 +21,7 @@ class ProfilUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         getUserInformations()
         // Do any additional setup after loading the view.
     }
@@ -32,7 +33,7 @@ class ProfilUserViewController: UIViewController {
     
     func getUserInformations() {
         let headers: HTTPHeaders = [
-            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")))",
+            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")!))",
             "Accept": "application/json"
         ]
         
@@ -56,6 +57,9 @@ class ProfilUserViewController: UIViewController {
 
     @IBAction func logoutBtn(_ sender: Any) {
         defaults.removeObject(forKey: "token")
+        // let storyboard = UIStoryboard(name: "Main", bundle: nil) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "loginControllerSegue") as! ViewController
+        present(vc, animated: true, completion: nil)
     }
     
     

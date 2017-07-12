@@ -32,9 +32,19 @@ class QrCodeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        print("TOTOTOTOTOOTOT")
+        print("TOTOTOTOTOOTOT")
+        print("TOTOTOTOTOOTOT")
+        print("TOTOTOTOTOOTOT")
+        print(AppDelegate().brightnessUser)
+        UIScreen.main.brightness = AppDelegate().brightnessUser
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print(AppDelegate().brightnessUser)
+        UIScreen.main.brightness = AppDelegate().brightnessUser
+    }
     
-    
-
     private func GenerateQrCode(generateString:String){
         if(qrcodeImage == nil){
             
