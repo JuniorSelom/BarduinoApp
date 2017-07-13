@@ -92,7 +92,7 @@ class HomeViewController: UITableViewController {
         print(element["name"].string!)
         // cell.textLabel?.text = "cell number \(indexPath.row)."
         cell.titleCocktail.text = element["name"].string
-        cell.prixCocktail.text = element["prix"].stringValue
+        cell.prixCocktail.text = element["prix"].stringValue + " crédits"
 
         var nameImage = element["name"].string! + ".png"
         nameImage = nameImage.replacingOccurrences(of: " ", with: "_")

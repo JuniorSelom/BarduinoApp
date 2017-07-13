@@ -37,6 +37,7 @@ class OrderViewController: UIViewController {
         
         orderBtn.layer.cornerRadius = 10
         orderBtn.layer.borderWidth = 1.0
+        orderBtn.layer.borderColor = UIColor.white.cgColor
         
         self.nameCocktailLabel.text = self.item?["name"].stringValue
         self.priceCocktailLabel.text = self.item?["prix"].stringValue

@@ -125,6 +125,11 @@ class QueueTableViewController: UITableViewController {
             .replacingOccurrences(of: " ", with: " à ")
         cell.dateLabel.text = "Le " + dateOrder
         
+        
+        var nameImage = element["cocktail"]["name"].string! + ".png"
+        nameImage = nameImage.replacingOccurrences(of: " ", with: "_")
+        cell.cocktailImage.image = UIImage(named: nameImage)
+        
         return cell
     }
 
