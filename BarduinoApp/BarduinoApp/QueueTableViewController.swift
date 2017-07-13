@@ -118,7 +118,6 @@ class QueueTableViewController: UITableViewController {
             cell.isUserInteractionEnabled = false
         }
         cell.drinkLabel.text = element["cocktail"]["name"].stringValue
-        cell.uidLabel.text = element["uuid"].stringValue
         
         let dateOrder = element["date"]
             .stringValue
