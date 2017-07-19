@@ -93,6 +93,12 @@ class OrderViewController: UIViewController {
                 // print("Data: \(utf8Text)")
                 let json = JSON(data: data)
                 print(json)
+                if(response.response?.statusCode == 200){
+                    let alert = UIAlertController(title: "Commande", message: "Commande Validée !", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok",style: UIAlertActionStyle.default, handler: nil))
+                    
+                    self.present(alert,animated: true,completion: nil)
+                }
             }
         }
     }
