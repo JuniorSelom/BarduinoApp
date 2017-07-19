@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginOk" {
             if logOk == true {
                 if let destinationVC = segue.destination as? HomeViewController {
@@ -38,8 +38,16 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }*/
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "loginOk"{
+            return logOk;
+        }
+        
+        return true;
     }
- 
+    
  
 
     @IBAction func loginBtn(_ sender: Any) {
@@ -80,16 +88,15 @@ class ViewController: UIViewController {
                             print(json)
                             if let token = json["token"] {
                                 print(token)
-                                self.logOk = true
+                                self.logOk = true;
                                 self.defaults.set(token, forKey: "token")
-                                /*
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "homeControllerSegue") as! HomeViewController
-                                vc.toto = "tototot" // you can pass parameters like that
-                                self.present(vc, animated: true, completion: nil)
-                                */
+                                
+                                self.performSegue(withIdentifier: "loginOk", sender: nil)
+ 
                             }
                         }
                     } catch{
+                        self.logOk = false;
                         print("TotoO? ??")
                         return;
                     }
@@ -100,11 +107,14 @@ class ViewController: UIViewController {
             task.resume()
         }
     }
+    
+    
 
     @IBAction func registerBtn(_ sender: Any) {
         print("register")
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "registerSegue") as! RegisterViewController
         self.present(vc, animated: true, completion: nil)
     }
+    
 }
 
