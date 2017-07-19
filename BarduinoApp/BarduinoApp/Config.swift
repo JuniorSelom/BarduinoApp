@@ -10,5 +10,4 @@ import Foundation
 
 struct config {
     var apiUrl = "https://api-barduino.herokuapp.com/"
-    
 }

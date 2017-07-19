@@ -40,7 +40,7 @@ class OrderViewController: UIViewController {
         orderBtn.layer.borderColor = UIColor.white.cgColor
         
         self.nameCocktailLabel.text = self.item?["name"].stringValue
-        self.priceCocktailLabel.text = self.item?["prix"].stringValue
+        self.priceCocktailLabel.text = (self.item?["prix"].stringValue)! + " crédits"
         
         self.firstIngredientCocktailLabel.text = "- " + (self.item?["drinks"][0]["name"].stringValue)!
         self.secondIngredientCocktailLabel.text = "- " + (self.item?["drinks"][1]["name"].stringValue)!

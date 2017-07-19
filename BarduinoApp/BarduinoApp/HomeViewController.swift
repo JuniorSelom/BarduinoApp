@@ -21,6 +21,11 @@ class HomeViewController: UITableViewController {
     var cocktail: [String: String] = [:];
     var indexSelected: Int = 0
     
+    var load: Bool = true;
+    var loading: [UIImage] = [UIImage(named: "loader0000.png")!, UIImage(named: "loader0001.png")!, UIImage(named: "loader0002.png")!, UIImage(named: "loader0003.png")!, UIImage(named: "loader0004.png")!, UIImage(named: "loader0005.png")!, UIImage(named: "loader0006.png")!, UIImage(named: "loader0007.png")!, UIImage(named: "loader0008.png")!, UIImage(named: "loader0009.png")!, UIImage(named: "loader0010.png")!, UIImage(named: "loader0011.png")!, UIImage(named: "loader0012.png")!, UIImage(named: "loader0013.png")!, UIImage(named: "loader0014.png")!, UIImage(named: "loader0015.png")!, UIImage(named: "loader0016.png")!, UIImage(named: "loader0017.png")!, UIImage(named: "loader0018.png")!, UIImage(named: "loader0019.png")!]
+    var imageLoading:UIImage!
+    var imageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("HomeViewController")
@@ -30,10 +35,18 @@ class HomeViewController: UITableViewController {
         // print(toto)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        imageLoading = UIImage.animatedImage(with: loading, duration: 1)!
+        imageView = UIImageView(image: imageLoading)
+        
+        if (load) {
+            let x = (UIScreen.main.bounds.width / 2) - 45.0
+            let y = (UIScreen.main.bounds.height / 2) - 45.0
+            self.imageView.frame = CGRect(x: x, y: y, width: 90, height: 90)
+            view.addSubview(self.imageView)
+        }
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,25 +74,37 @@ class HomeViewController: UITableViewController {
     
     func getCocktails() {
         let headers: HTTPHeaders = [
-            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")!))",
+            "Authorization": "Basic \(String(describing: defaults.object(forKey: "token")))",
             "Accept": "application/json"
         ]
-        print(defaults.object(forKey: "token")!)
+
         Alamofire.request(config().apiUrl + "cocktails", method: .get, headers: headers).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
             print("Result: \(response.result)")                         // response serialization result
             
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                // print("Data: \(utf8Text)")
-                let json = JSON(data: data)
-                print(json.count)
-                for cocktail in json.arrayValue {
-                    // print(cocktail)
-                    self.items.append(cocktail)
-                    print(cocktail["name"])
+            print("RESPONSE ???: \(String(describing: response.response?.statusCode.description))")
+            if (response.response?.statusCode.description == "200") {
+                self.load = false
+                if let data = response.data/*, let utf8Text = String(data: data, encoding: .utf8)*/ {
+                    // print("Data: \(utf8Text)")
+                    let json = JSON(data: data)
+                    print(json.count)
+                    for cocktail in json.arrayValue {
+                        // print(cocktail)
+                        self.items.append(cocktail)
+                        print(cocktail["name"])
+                    }
+                    self.imageView.removeFromSuperview()
+                    self.theTableView.reloadData()
                 }
-                self.theTableView.reloadData()
+            } else {
+                self.imageView.removeFromSuperview()
+                let alert = UIAlertController(title: "Erreur", message: "Merci de vérifiez votre réseau", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { action -> Void in
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "loginControllerSegue") as! ViewController
+                    self.present(vc, animated: true, completion: nil)
+                })
             }
         }
     }

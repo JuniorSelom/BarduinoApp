@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SystemConfiguration
 
 class ViewController: UIViewController {
 
@@ -15,10 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     let defaults = UserDefaults.standard
-    
+    var logOk = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,14 +28,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginOk" {
-            if let destinationVC = segue.destination as? HomeViewController {
-                destinationVC.toto = "bbbbb"
+            if logOk == true {
+                if let destinationVC = segue.destination as? HomeViewController {
+                    destinationVC.toto = "bbbbb"
+                }
             }
         }
-    }*/
+    }
  
  
 
@@ -50,43 +53,47 @@ class ViewController: UIViewController {
         if let url = urlLogin {
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            let tt = String(format: "Basic %@", base64LoginString)
-            request.addValue(tt, forHTTPHeaderField: "Authorization")
+            let basicStr = String(format: "Basic %@", base64LoginString)
+            request.addValue(basicStr, forHTTPHeaderField: "Authorization")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            print(tt)
+            print(basicStr)
             let task = URLSession.shared.dataTask(with: request, completionHandler: {
                 (data, response, error) in
+                if (error != nil) {
+                    print("errrror")
+                    return;
+                }
                 if (data != nil) {
+                    print("DATA: ")
                     print(data ?? "data")
+                    print("RESPONSE: ")
                     print(response ?? "response")
+                    print("ERROR: ")
                     print(error ?? "error")
+                    if((error) != nil) {
+                        print("rr")
+                        return;
+                    }
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data!) as? [String: Any] {
                             print(json)
                             if let token = json["token"] {
                                 print(token)
+                                self.logOk = true
                                 self.defaults.set(token, forKey: "token")
                                 /*
-                                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginOk") as! HomeViewController
-                                self.present(newViewController, animated: true, completion: nil)
-                                */
-                                /*
-                                let newViewController2 = segue.destination as! HomeViewController
-                                self.prepare(for: newViewController2, sender: nil)
-                                */
-                                // self.prepare(for: HomeViewController, sender: nil)
-                                // self.performSegue(withIdentifier: "loginOk", sender: nil)
-                                
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "loginOk") as! HomeViewController
+                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "homeControllerSegue") as! HomeViewController
                                 vc.toto = "tototot" // you can pass parameters like that
                                 self.present(vc, animated: true, completion: nil)
+                                */
                             }
                         }
-                        
-                    } catch let err as NSError {
-                        print(err.code)
+                    } catch{
+                        print("TotoO? ??")
+                        return;
                     }
+                } else {
+                    print("BAD LOGIN")
                 }
             })
             task.resume()
