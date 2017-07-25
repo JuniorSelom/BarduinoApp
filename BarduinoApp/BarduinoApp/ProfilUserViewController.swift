@@ -49,7 +49,11 @@ class ProfilUserViewController: UIViewController {
                 self.usernameLabel.text = json["user"]["username"].stringValue
                 self.coinsLabel.text = json["coin"].stringValue
                 self.mailLabel.text = json["user"]["email"].stringValue
-                
+            } else {
+                let alert = UIAlertController(title: "Erreur", message: "Oops, merci de vérifiez votre réseau", preferredStyle: UIAlertControllerStyle.alert)
+                // add action Non
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     

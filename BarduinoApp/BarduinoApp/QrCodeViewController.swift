@@ -33,10 +33,6 @@ class QrCodeViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("TOTOTOTOTOOTOT")
-        print("TOTOTOTOTOOTOT")
-        print("TOTOTOTOTOOTOT")
-        print("TOTOTOTOTOOTOT")
         print(AppDelegate().brightnessUser)
         UIScreen.main.brightness = AppDelegate().brightnessUser
     }

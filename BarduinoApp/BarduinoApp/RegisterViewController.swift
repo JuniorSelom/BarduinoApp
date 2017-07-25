@@ -19,6 +19,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
+
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var repasswordLabel: UILabel!
     
@@ -44,14 +45,23 @@ class RegisterViewController: UIViewController {
     @IBAction func cancelButtonSender(_ sender: Any) {
     }
     
-    func checkSimilarityPassword() -> Bool {
-        if (passwordTextField.text == repasswordTextField.text) {
-            return true
-        } else {
+    func checkInformations() -> Bool {
+        var isOk = true
+        print()
+        if ((usernameTextField.text?.isEmpty)!) {
+            usernameLabel.textColor = UIColor(red: 0.86, green: 0.22, blue: 0.22, alpha: 1.0)
+            isOk = false
+        }
+        if ((mailTextField.text?.isEmpty)!) {
+            mailLabel.textColor = UIColor(red: 0.86, green: 0.22, blue: 0.22, alpha: 1.0)
+            isOk = false
+        }
+        if ((passwordTextField.text != repasswordTextField.text) || (passwordTextField.text?.isEmpty)! || (repasswordTextField.text?.isEmpty)!) {
             passwordLabel.textColor = UIColor(red: 0.86, green: 0.22, blue: 0.22, alpha: 1.0)
             repasswordLabel.textColor = UIColor(red: 0.86, green: 0.22, blue: 0.22, alpha: 1.0)
-            return false
+            isOk = false
         }
+        return isOk
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,14 +74,18 @@ class RegisterViewController: UIViewController {
  
     
     func registerUser() -> Bool {
-        let checkPwd = checkSimilarityPassword()
+        let checkPwd = checkInformations()
+        print("----")
+        print(checkPwd)
+        print("----")
         if (checkPwd) {
             let parameters: Parameters = [
                 "username": usernameTextField.text!,
                 "email": mailTextField.text!,
                 "password": passwordTextField.text!,
-                "coin": 200
+                "coin": 11
             ]
+            print()
             Alamofire.request(
                 config().apiUrl + "createuser",
                 method: .post,
@@ -85,6 +99,10 @@ class RegisterViewController: UIViewController {
                         self.valid = true
                         self.performSegue(withIdentifier: "validRegisterSegue", sender: self)
                     } else {
+                        let alert = UIAlertController(title: "Erreur", message: "Oops, une erreure est survenue pendant la création de votre compte", preferredStyle: UIAlertControllerStyle.alert)
+                        // add action Non
+                        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                         self.valid = false
                     }
             }

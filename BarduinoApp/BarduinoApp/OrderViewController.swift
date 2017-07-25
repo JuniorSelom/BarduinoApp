@@ -98,7 +98,17 @@ class OrderViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "Ok",style: UIAlertActionStyle.default, handler: nil))
                     
                     self.present(alert,animated: true,completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Erreur", message: "Oops, merci de vérifiez votre réseau", preferredStyle: UIAlertControllerStyle.alert)
+                    // add action Non
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
+            } else {
+                let alert = UIAlertController(title: "Erreur", message: "Vous n'avez plus assez de crédit", preferredStyle: UIAlertControllerStyle.alert)
+                // add action Non
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }

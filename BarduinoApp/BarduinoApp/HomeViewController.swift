@@ -120,6 +120,7 @@ class HomeViewController: UITableViewController {
         cell.prixCocktail.text = element["prix"].stringValue + " crédits"
 
         var nameImage = element["name"].string! + ".png"
+        print(nameImage)
         nameImage = nameImage.replacingOccurrences(of: " ", with: "_")
         cell.imageCocktail.image = UIImage(named: nameImage)
         // Configure the cell...

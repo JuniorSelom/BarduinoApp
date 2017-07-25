@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        defaults.removeObject(forKey: "token")
         hideKeyboardWhenTappedAround();
     }
 
@@ -97,7 +98,12 @@ class ViewController: UIViewController {
                         }
                     } catch{
                         self.logOk = false;
-                        print("TotoO? ??")
+                        
+                        let alert = UIAlertController(title: "Erreur", message: "Merci de vérifiez votre mot de passe ou nom d'utilisateur !", preferredStyle: UIAlertControllerStyle.alert)
+                        // add action Non
+                        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                        
                         return;
                     }
                 } else {

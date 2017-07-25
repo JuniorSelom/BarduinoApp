@@ -102,6 +102,11 @@ class QueueTableViewController: UITableViewController {
                     self.items.append(cocktail)
                 }
                 self.theTableView.reloadData()
+            } else {
+                let alert = UIAlertController(title: "Erreur", message: "Oops, merci de vérifiez votre réseau", preferredStyle: UIAlertControllerStyle.alert)
+                // add action Non
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
